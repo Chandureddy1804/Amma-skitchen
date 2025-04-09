@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amma's Kitchen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    header img.main-logo {
+        
+      width: 500px;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #d84315;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #4e342e;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      font-style: italic;
+      color: #6d4c41;
+    }
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      background: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .specials img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .specials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .review {
+      background-color: #fff3e0;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="./logo.png"Amma's_Kitchen\"_features_the_name_in_b.png" alt="Amma's Kitchen Main Logo" class="main-logo">
+  <h1>Amma's Kitchen</h1>
+  <p>Bringing the Taste of Amma’s Love to Your Plate!</p>
+  <p class="tagline">Authentic Andhra Tiffins, Straight from Our Kitchen to Your Plate!</p>
+  <a href="https://wa.me/917095297048" class="btn">Order on WhatsApp</a>
+  <a href="tel:+917095297048" class="btn">Call Now</a>
+</header>
+
+<section>
+  <h2>Our Specialties</h2>
+  <div class="specials">
+    <div>
+      <img src="./dosa.jpg" alt="Ghee Karam Dosa">
+      <p><strong>Ghee Karam Dosa</strong> – Crispy dosa with ghee and fiery karam chutney</p>
+    </div>
+    <div>
+      <img src="./punugulu.jpg" alt="Punugulu">
+      <p><strong>Punugulu</strong> – Crunchy snack with soft inside, served with chutneys</p>
+    </div>
+    <div>
+      <img src="./pesarattu.jpg" alt="Pesarattu Upma">
+      <p><strong>Upma & Pesarattu</strong> – A classic Andhra combo breakfast</p>
+    </div>
+    <div>
+      <img src="./idly.jpg" alt="Idli-Vada">
+      <p><strong>Idli-Vada Combo</strong> – Fluffy idlis with crispy vadas & coconut chutney</p>
+    </div>
+    <div>
+      <img src="./bonda.jpg" alt="Mysore Bonda">
+      <p><strong>Mysore Bonda</strong> – Golden, spicy, and perfect with tea</p>
+    </div>
+  </div>
+
+  
+</section>
+
+<section>
+    <h2>Leave a Review</h2>
+    <form id="review-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <textarea id="review" placeholder="Your Review" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+    <div id="reviews-container"></div>
+  </section>
+  <a href="reviews.php" class="btn">View Reviews</a>
+
+
+<section>
+  <h2>Contact Us</h2>
+  <p>📞 Call/WhatsApp: +91 70952 97048</p>
+  <p>📧 Email: chandrashekharreddy935@gmail.com</p>
+  <p>📍 Location: Hyderabad, Telangana</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Amma's Kitchen. All rights reserved.</p>
+</footer>
+<script src="https://cdn.firebase.com/libs/firebase/9.6.7/firebase-app.js"></script>
+<script src="https://cdn.firebase.com/libs/firebase/9.6.7/firebase-database.js"></script>
+  
+  
+</body>
+</html>
